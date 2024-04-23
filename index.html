@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+    <div class="body">
+        <dialog id="modal">
+            <div class="flex-parent">
+                <div class="container">
+                <button class="btn-close" onclick="closeModal()">
+                    <i class='bx bx-window-close' ></i>
+                </button>
+                <form action="" id="book-form">
+                    <h1>Add Book</h1>
+                    <div class="user-input">
+                        <label for="book-title">
+                            <input type="text" name="book-title"id="book-title" placeholder="Title"required>
+                            <i class='bx bx-book-open'></i>
+                        </label>
+                    </div>
+                    <div class="user-input">
+                        <label for="book-author">
+                            <input type="text" name="book-author"id="book-author"placeholder="Author" required>
+                            <i class='bx bx-id-card'></i>
+                        </label>
+                    </div>
+                    <div class="user-input">
+                        <label for="book-pages">
+                            <input type="number" name="book-pages" 
+                            placeholder="No. of Pages"id="book-pages" min="1" required>
+                            <i class='bx bx-grid-alt'></i>
+                        </label>
+                    </div>
+                    <div class="checkbox-input">
+                        <label for="have-read">
+                            <input type="checkbox" name="have-read"id="have-read"> have read
+                        </label>
+                    </div>
+                    <button type="submit" class="btn"> Submit<button>
+                </form>
+                </div>
+            </div>
+          </dialog>
+
+
+
+
+        <div class="left-container">
+            <div class="top-text">Odin-Brary</div>
+            <div class="middle-text">The<span class="number-1">#1</span> source for Odin Related Mythology books and other.</div>
+            <div class="bottom-text">An ever-growing catalogue of high-quality reading materials and content built and accumulated by you.</div>
+        </div>
+
+        <div class="right-container">   
+            <nav class="nav-main">
+                <ul id="home">Home</ul>
+                <ul id="delete">Delete Book</ul>
+                <ul onclick="openModal()" id="add">Add Book</ul>
+            </nav>
+
+            <div class="right-card-container" id="right-card-container">
+                <div class="card">
+                    <button class="card-close" onclick="">
+                        <i class='bx bx-window-close' ></i>
+                    </button>
+
+                    <div class="card-book">
+                        Book
+                    </div>
+                    <div class="card-title">
+                        Title: <span class="span-title"></span>
+                    </div>
+                    <div class="card-author">
+                        Author: <span class="span-author"></span>
+                    </div>
+                    <div class="card-pages">
+                        Pages: <span class="span-pages"></span>
+                    </div>
+
+                    <div class="card-have-read">
+                        have read: <span class="span-read"></span>
+                    </div>
+                </div>
+  
+      
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
