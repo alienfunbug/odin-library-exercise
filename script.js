@@ -13,7 +13,7 @@ let multiSelectButtons = document.querySelectorAll("button.card-close");
 multiSelectButtons.forEach(function (btnCard) {
   btnCard.addEventListener("click", function () {
     removeElementAndChildren(btnCard.parentNode);
-    console.log("deleted");
+    console.log("Book Deleted");
   });
 })
 
@@ -80,6 +80,9 @@ function addBookToLibrary(title, author, pages, haveRead) {
     spanRead.textContent = "×";
   }
 
+  spanRead.addEventListener("click",function(){
+    toggleReadStatus(this);
+  })
 
   divCard.append(btnCard, divBook, divTitle, divAuthor, divPages, divHaveread);
   container.appendChild(divCard);
@@ -134,3 +137,14 @@ document.getElementById("book-form").addEventListener("submit", function (event)
   console.log(myLibrary);
 });
 
+
+
+function toggleReadStatus(spanElement) {
+  if (spanElement.innerHTML === "✓") {
+      spanElement.innerHTML = "×";
+      spanElement.style.color = "red"; 
+  } else {
+      spanElement.innerHTML = "✓";
+      spanElement.style.color = "#11e911"; 
+  }
+}
