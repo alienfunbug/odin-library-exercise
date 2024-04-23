@@ -1,3 +1,16 @@
+/* unused selectors
+
+.card-title{
+}
+
+.card-author{
+}
+
+.card-pages{
+}
+.card-have-read{   
+}*/
+
 @font-face {
     font-family: bouncy;
     src: url(bouncy3.otf);
@@ -5,239 +18,238 @@
 
 @font-face {
     font-family: power;
-    src:url(power_entry.otf);
+    src: url(power_entry.otf);
 }
 
 @font-face {
-    font-family:anime;
-    src:url(animeace.ttf);
+    font-family: anime;
+    src: url(animeace.ttf);
 }
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    height:95vh;
-    background: linear-gradient(
-        to right, 
-        #ffffff 0%, 
-        #ffffff 10%, 
-        rgb(243,241,206,0.6) 25%, 
-        goldenrod 100%
-      );
-    color:white;
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: white;
 }
 
-.body{
-
-    display:flex;
-    height:100vh;
-
-
+body {
+    height: 100vh;
+    background: linear-gradient(to right,
+            #ffffff 0%,
+            #ffffff 10%,
+            rgb(243, 241, 206, 0.6) 25%,
+            goldenrod 100%);
+    color: white;
 }
 
-.left-container{
-    background-color: rgb(243, 241, 206,0.6);
+.body {
+    display: flex;
+    height: 100%;
+}
 
-    flex:1;
-    display:flex;
+.left-container {
+    background-color: rgb(243, 241, 206, 0.6);
+    flex: 1;
+    display: flex;
     flex-direction: column;
-
     justify-content: space-around;
-
-  
-
 }
 
-.top-text{
-    padding:0 40px 0 40px;
+.top-text {
+    padding: 0 40px 0 40px;
     font-family: bouncy;
-    font-size:3rem;
-    color:goldenrod;
+    font-size: 3rem;
+    color: goldenrod;
 }
 
 
-.middle-text{
-    padding:0 40px 0 40px;
+.middle-text {
+    padding: 0 40px 0 40px;
     font-family: bouncy;
-    font-size:3rem;
-    color:goldenrod;
-    color:rgb(255, 209, 94);
+    font-size: 3rem;
+    color: goldenrod;
+    color: rgb(255, 209, 94);
 }
-.number-1{
-    color:rgb(255, 153, 0);
+
+.number-1 {
+    color: rgb(255, 153, 0);
     font-weight: 800;
     font-style: italic;
     font-family: anime;
 }
 
-.bottom-text{
-    padding:0 40px 0 40px;
+.bottom-text {
+    padding: 0 40px 0 40px;
     font-family: anime;
-    font-size:1.2rem;
+    font-size: 1.2rem;
     font-style: italic;
-    color:goldenrod;
-    color:rgb(255, 209, 94);
-}
-.right-container{
-    flex:3;
+    color: goldenrod;
+    color: rgb(255, 209, 94);
 }
 
-.nav-main{
-    width:100%;
-    color:white;
+.right-container {
+    flex: 3;
+}
+
+.nav-main {
+    width: 100%;
+    color: white;
     font-size: 1.8rem;
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     font-family: power;
-    padding-right:20px;
+    padding-right: 20px;
 }
-ul{
-    padding:25px 20px;
+
+ul {
+    padding: 25px 20px;
 }
 
 
 dialog::backdrop {
     backdrop-filter: blur(5px);
     box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-  }
+}
 
-  .user-input{
-    padding:10px 5px;
-  }
+.user-input {
+    padding: 10px 5px;
+}
 
-  .flex-parent{
+.flex-parent {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  dialog {
+dialog {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 35vw;
-    min-height:50vh;
+    min-width: 35%;
+    min-height: 50%;
     border-radius: 25px;
     background-color: white;
-    
+
 }
 
-dialog h1{
-    font-size:3rem;
+dialog h1 {
+    font-size: 3rem;
     font-family: power;
-    color:goldenrod;
+    color: goldenrod;
     text-align: center;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
-dialog .user-input{
-    width:100%;
+dialog .user-input {
+    width: 100%;
     margin: 5px 0;
-    font-size:1.2rem;
-    color:goldenrod;
+    font-size: 1.2rem;
+    color: goldenrod;
 }
-.user-input{
-    display:flex;
-    align-content:center;
+
+.user-input {
+    display: flex;
+    align-content: center;
     justify-content: space-between;
 }
 
-.user-input input{
-    background:rgba(255, 153, 0,0.3);
-    border:2px solid rgba(218, 165, 32,0.2);
+.user-input input {
+    background: rgba(255, 153, 0, 0.3);
+    border: 2px solid rgba(218, 165, 32, 0.2);
     border-radius: 30px;
-    padding:10px;
-    color:rgb(143, 143, 163);
+    padding: 10px;
+    color: rgb(143, 143, 163);
 }
 
 
-.checkbox-input{
-    padding:0 0 10px 10px;
+.checkbox-input {
+    padding: 0 0 10px 10px;
     accent-color: goldenrod;
 }
-.btn{
-    margin:15px 10px;
-    width:50%;
-    height:30px;
+
+.btn {
+    margin: 15px 10px;
+    width: 50%;
+    height: 30px;
     border-radius: 8px;
-    cursor:pointer;
-    background:goldenrod;
-    color:white;
-    padding:5px;
-    font-family:bouncy;
+    cursor: pointer;
+    background: goldenrod;
+    color: white;
+    padding: 5px;
+    font-family: bouncy;
 }
 
-.btn-close{
-    border:none;
-    font-size:2rem;
-    color:rgb(136, 120, 97);
-    position:relative;
-    left:80%;
-    padding-top:10px;
+.btn-close {
+    border: none;
+    font-size: 2rem;
+    color: rgb(136, 120, 97);
+    position: relative;
+    left: 80%;
+    padding-top: 10px;
 }
 
-input:focus{
-    border:none;
-    outline:1px auto goldenrod;
-    
+input:focus {
+    border: none;
+    outline: 1px auto goldenrod;
+
 }
 
-.right-card-container{
-    display:flex;
+.right-card-container {
+    display: flex;
     flex-wrap: wrap;
-    padding:20px;
+    padding: 20px;
     justify-content: center;
-    margin:20px;
+    margin: 20px;
 }
 
 
-.card{
-    color:rgb(235, 183, 100);
-    font-size:1.1rem;
-    padding:5px 10px 10px 10px;
+.card {
+    color: rgb(235, 183, 100);
+    font-size: 1.1rem;
+    padding: 5px 10px 10px 10px;
     backdrop-filter: sepia(.4);
-    background-color:bisque;
+    background-color: bisque;
     box-shadow: -10px 5px 15px rgb(255, 163, 51);
-    border-radius:8px;
-    font-family:sans-serif;
+    border-radius: 8px;
+    font-family: sans-serif;
     min-width: 200px;
 }
 
-.card-close{
-    border:none;
-    font-size:2rem;
-    color:rgb(136, 120, 97);
-    position:relative;
+.card-close {
+    border: none;
+    font-size: 2rem;
+    color: rgb(136, 120, 97);
+    position: relative;
     left: 85%;
     background-color: transparent;
 }
-.card-book{
+
+.card-book {
     font-family: bouncy;
     text-align: center;
-    padding:5px;
+    padding: 0 0 15px 0;
+    margin-top: -20px;
 
 }
 
-.card-title{
-    
+
+.card span {
+    color: rgb(172, 127, 15);
 }
 
-.card-author{
-    
+.card .span-read {
+    font-size: 1.5rem;
+    color: #11e911;
 }
 
-.card-pages{
-    
+.card .span-notread {
+    font-size: 1.5rem;
+    color: #e9112e;
 }
-.card-have-read{
-    
-}
-.card span{
-    color:rgb(172, 127, 15);
-}
-
-
