@@ -13,17 +13,17 @@
 
 @font-face {
     font-family: bouncy;
-    src: url(bouncy3.otf);
+    src: url(fonts/bouncy3.otf);
 }
 
 @font-face {
     font-family: power;
-    src: url(power_entry.otf);
+    src: url(fonts/power_entry.otf);
 }
 
 @font-face {
     font-family: anime;
-    src: url(animeace.ttf);
+    src: url(fonts/animeace.ttf);
 }
 
 * {
